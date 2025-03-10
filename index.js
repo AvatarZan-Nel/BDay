@@ -8,6 +8,12 @@ window.requestAnimFrame = function () {
   };
 }();
 
+window.addEventListener('click', function () {
+    
+  var audio = document.getElementById("song");
+  audio.play();
+});
+
 // now we will setup our basic variables for the demo
 var canvas = document.getElementById('canvas'),
 ctx = canvas.getContext('2d'),
